@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+     android:background="#D3D3D3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+           
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ib_protrait"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:src="@drawable/card_title_2"
+               
+                
+                />
+ <!-- 用android:background="@drawable/card_title_2"替换android:src.....这样就可以解决图片边框和图片不随按钮大小按比例缩放的问题-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"
+                    android:text="寂寞哥" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="今天:17:15" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" 
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:background="#D3D3D3"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="5dp"
+               >
+
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/tv_distanceAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="跑了6.6km，用时13min"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="5dp"
+                
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                     android:paddingLeft="8dp"
+                    android:id="@+id/tv_avgHeartAndavgSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平均心率:166次/min,平均速度6.41m/s" 
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dp"
+             android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="13dp"
+             />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/generatedLinearLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_user1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝蓝:" 
+                    android:textColor="@color/bluegreen"/>
+
+                <TextView
+                    android:id="@+id/tv_comment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我好爱你哈哈哈，你怎么了啦" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_user2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="脾气大大的宝宝:" 
+                    android:textColor="@color/bluegreen"/>
+
+                <TextView
+                    android:id="@+id/tv_comment2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="啦啦啦啦你好啊" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.60" >
+
+                <TextView
+                    android:id="@+id/tv_user3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="寂寞:" 
+                    android:textColor="@color/bluegreen"/>
+
+                <TextView
+                    android:id="@+id/tv_comment3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="南区区草寂寞哥不怕没有女朋友，我要的是女神级别的女朋友啊啊啊啊啊" />
+
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_user4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="海比天蓝:" 
+                    android:textColor="@color/bluegreen"/>
+
+                <TextView
+                    android:id="@+id/tv_comment4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我好爱你哈哈哈，你怎么了啦" />
+            </LinearLayout>
+
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_user5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="呆呆:"
+                    android:textColor="@color/bluegreen" />
+
+                <TextView
+                    android:id="@+id/tv_comment5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="啊哦，今天跑步跑了很久，感觉好累啊，但是重在享受过程哈" />
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_user6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝蓝:" 
+                    android:textColor="@color/bluegreen"/>
+
+                <TextView
+                    android:id="@+id/tv_comment6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我好爱你哈哈哈，你怎么了啦" />
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_user7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝蓝:" 
+                    android:textColor="@color/bluegreen"/>
+
+                <TextView
+                    android:id="@+id/tv_comment7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我好爱你哈哈哈，你怎么了啦" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/ib_zan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/feed_like_normal" />
+
+            <ImageButton
+                android:id="@+id/ib_comment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/feed_comment_normal"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

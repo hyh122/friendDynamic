@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical" >
+    
+
+<FrameLayout
+   	 	android:id="@+id/frameLayoutOfFriendNews"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+       <com.example.frienddynamicdemo.PullRefreshListView
+           android:id="@+id/pullRefreshListView"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:cacheColorHint="#00000000" >
+       </com.example.frienddynamicdemo.PullRefreshListView>
+        
+    </FrameLayout>
+</LinearLayout>
