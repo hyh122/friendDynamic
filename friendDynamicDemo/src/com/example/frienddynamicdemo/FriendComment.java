@@ -2,7 +2,7 @@ package com.example.frienddynamicdemo;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//»ÆÒ«»Ô
 public class FriendComment {
 	private String email;
 	private String userName;
